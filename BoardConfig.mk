@@ -26,6 +26,7 @@
 
 # Camera
 USE_CAMERA_STUB := true
+BOARD_USES_ECLAIR_LIBCAMERA := true
 
 # inherit from the proprietary version
 -include vendor/semc/shakira/BoardConfigVendor.mk

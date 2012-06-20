@@ -166,4 +166,7 @@
     <!-- Base "touch slop" value used by ViewConfiguration as a
          movement threshold where scrolling should begin. -->
     <dimen name="config_viewConfigurationTouchSlop">12dp</dimen>
+    
+    <!-- screen off animation -->
+    <bool name="config_animateScreenLights">false</bool>
 </resources>

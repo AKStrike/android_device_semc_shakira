@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<add-resource type="string" name="dxleft">
+		<string name="dxleft" translate="false">IScreamDX v000a</string>
+	</add-resource>
+	<add-resource type="string" name="dxright">
+		<string name="dxright" translate="false">doixanh@xda</string>
+	</add-resource>
+</resources>

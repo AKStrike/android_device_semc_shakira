@@ -1,4 +1,3 @@
-
 ifneq ($(BUILD_TINY_ANDROID),true)
 
 LOCAL_PATH := $(call my-dir)
@@ -12,6 +11,7 @@ LOCAL_WHOLE_STATIC_LIBRARIES := libaudiopolicy_legacy
 LOCAL_MODULE_TAGS := optional
 
 LOCAL_SHARED_LIBRARIES := \
+    libbinder \
     libcutils \
     libutils \
     libmedia
@@ -39,12 +39,12 @@ LOCAL_SHARED_LIBRARIES := \
     libhardware_legacy \
     libdl
 
-LOCAL_SRC_FILES += AudioHardware.cpp
+LOCAL_SRC_FILES := AudioHardware.cpp
 
 LOCAL_CFLAGS += -fno-short-enums
 
 ifeq ($(BOARD_HAVE_BLUETOOTH),true)
-#  LOCAL_SHARED_LIBRARIES += audio.a2dp.default
+  LOCAL_WHOLE_SHARED_LIBRARIES += audio.a2dp.default libbinder
 endif
 
 include $(BUILD_SHARED_LIBRARY)

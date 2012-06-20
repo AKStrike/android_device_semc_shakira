@@ -1,11 +1,8 @@
 ## Specify phone tech before including full_phone
 $(call inherit-product, vendor/cm/config/gsm.mk)
 
-# Inherit some common OXP stuff.
-$(call inherit-product, vendor/oxp/common_oxp_phone.mk)
-
 # Inherit some common CM stuff.
-# $(call inherit-product, vendor/cm/config/common_full_phone.mk)
+$(call inherit-product, vendor/cm/config/common_full_phone.mk)
 
 # Inherit device configuration
 $(call inherit-product, device/semc/shakira/device_shakira.mk)
@@ -16,7 +13,7 @@ PRODUCT_DEVICE := shakira
 PRODUCT_NAME := cm_shakira
 PRODUCT_BRAND := SEMC
 PRODUCT_MODEL := X8
-PRODUCT_MANUFACTURER := Sony Ericsson
+PRODUCT_MANUFACTURER := Sh!t Ericsson
 
 # Release data
 PRODUCT_VERSION_DEVICE_SPECIFIC := 03

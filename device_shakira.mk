@@ -97,7 +97,7 @@ PRODUCT_PACKAGES += \
     gps.delta \
     libOmxCore \
     libmm-omxcore \
-    libopencorehw
+    libopencorehw 
 
 PRODUCT_LOCALES += mdpi
 
