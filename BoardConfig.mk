@@ -81,7 +81,7 @@ TARGET_NO_RADIOIMAGE := true
 #TARGET_PREBUILT_KERNEL := device/semc/shakira/kernel
 #TARGET_NO_KERNEL := true
 
-WITH_DEXPREOPT := true
+WITH_DEXPREOPT := false
 
 BOARD_CUSTOM_BOOTIMG_MK := device/semc/msm7x27-common/custombootimg.mk
 TARGET_RECOVERY_PRE_COMMAND := "mkdir /cache/recovery;touch /cache/recovery/boot;sync;"
