@@ -215,4 +215,6 @@ PRODUCT_COPY_FILES += \
     device/semc/shakira/prebuilt/HoloLauncher.apk:/system/app/HoloLauncher.apk \
     device/semc/shakira/prebuilt/GPSCountryOptimizer.apk:/system/app/GPSCountryOptimizer.apk \
     device/semc/shakira/prebuilt/Superuser.apk:/system/app/Superuser.apk \
-    device/semc/shakira/prebuilt/su:/system/xbin/su
+    device/semc/shakira/prebuilt/su:/system/xbin/su \
+    device/semc/shakira/prebuilt/libqpicjni87.so:/system/lib/libqpicjni87.so
+
