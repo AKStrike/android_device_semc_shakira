@@ -214,5 +214,6 @@ PRODUCT_COPY_FILES += \
     device/semc/shakira/prebuilt/GDXUpdateNotify.apk:/system/app/GDXUpdateNotify.apk \
     device/semc/shakira/prebuilt/HoloLauncher.apk:/system/app/HoloLauncher.apk \
     device/semc/shakira/prebuilt/GPSCountryOptimizer.apk:/system/app/GPSCountryOptimizer.apk \
-    device/semc/shakira/prebuilt/libqpicjni88.so:/system/lib/libqpicjni88.so
+    device/semc/shakira/prebuilt/libqpicjni88.so:/system/lib/libqpicjni88.so \
+    device/semc/shakira/prebuilt/sysctl.conf:/system/etc/sysctl.conf
 
