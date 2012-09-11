@@ -239,7 +239,7 @@ PRODUCT_COPY_FILES += \
 	device/semc/shakira/prebuilt/gapps/app/GoogleQuickSearchBox.apk:system/app/GoogleQuickSearchBox.apk \
 	device/semc/shakira/prebuilt/gapps/app/GoogleServicesFramework.apk:system/app/GoogleServicesFramework.apk \
 	device/semc/shakira/prebuilt/gapps/app/LatinImeTutorial.apk:system/app/LatinImeTutorial.apk \
-	device/semc/shakira/prebuilt/gapps/app/Maps.apk:system/app/Maps.apk \	
+	device/semc/shakira/prebuilt/gapps/app/Maps.apk:system/app/Maps.apk \
 	device/semc/shakira/prebuilt/gapps/app/MarketUpdater.apk:system/app/MarketUpdater.apk \
 	device/semc/shakira/prebuilt/gapps/app/MediaUploader.apk:system/app/MediaUploader.apk \
 	device/semc/shakira/prebuilt/gapps/app/NetworkLocation.apk:system/app/NetworkLocation.apk \
