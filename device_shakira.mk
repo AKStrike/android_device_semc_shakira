@@ -253,4 +253,4 @@ PRODUCT_COPY_FILES += \
 	device/semc/shakira/prebuilt/gapps/etc/permissions/features.xml:system/etc/permissions/features.xml \
 	device/semc/shakira/prebuilt/gapps/framework/com.google.android.maps.jar:system/framework/com.google.android.maps.jar \
 	device/semc/shakira/prebuilt/gapps/lib/libtalk_jni.so:system/lib/libtalk_jni.so \
-	device/semc/shakira/prebuilt/gapps/lib/libvoicesearch.so:sysem/lib/libvoicesearch.so
+	device/semc/shakira/prebuilt/gapps/lib/libvoicesearch.so:system/lib/libvoicesearch.so
