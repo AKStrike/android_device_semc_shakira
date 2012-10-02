@@ -178,80 +178,11 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.sys.themeId=ICSandwich \
     persist.sys.themePackageName=com.achep.theme.ICSandwich
 
-## Extra prebuilt binaries
-#PRODUCT_COPY_FILES += \
-    #device/semc/shakira/prebuilt/hw_config.sh:system/etc/hw_config.sh \
-    #device/semc/shakira/prebuilt/FmRxService.apk:system/app/FmRxService.apk \
-    #device/semc/shakira/prebuilt/Radio.apk:system/app/Radio.apk \
-    #device/semc/shakira/prebuilt/SystemConnector.apk:system/app/SystemConnector.apk \
-    #device/semc/shakira/prebuilt/com.sonyericsson.suquashi.jar:system/framework/com.sonyericsson.suquashi.jar \
-    #device/semc/shakira/prebuilt/fmreceiverif.jar:system/framework/fmreceiverif.jar \
-    #device/semc/shakira/prebuilt/SemcSmfmf.jar:system/framework/SemcSmfmf.jar \
-    #device/semc/shakira/prebuilt/vold.fstab:system/etc/vold.fstab \
-    #device/semc/shakira/prebuilt/usr/keylayout/h2w_headset.kl:system/usr/keylayout/h2w_headset.kl \
-    #device/semc/shakira/placeholder:system/lib/modules/.placeholder
-   
-## Themes
-#PRODUCT_COPY_FILES += \
-    #device/semc/shakira/prebuilt/bootanimation.zip:/system/media/bootanimation.zip \
-    #device/semc/shakira/prebuilt/ICSandwich.apk:/system/app/ICSandwich.apk
-
-## A2SD and extra init files
-#PRODUCT_COPY_FILES += \
-    #device/semc/shakira/prebuilt/a2sd:system/bin/a2sd \
-    #device/semc/shakira/prebuilt/10apps2sd:system/etc/init.d/10apps2sd \
-    #device/semc/shakira/prebuilt/05mountext:system/etc/init.d/05mountext \
-    #device/semc/shakira/prebuilt/04modules:system/etc/init.d/04modules \
-    #device/semc/shakira/prebuilt/06gingerdx:system/etc/init.d/06gingerdx \
-    #device/semc/shakira/prebuilt/zipalign:system/xbin/zipalign
-    
-## Battery Tweak
-    #device/semc/shakira/prebuilt/sysctl.conf:/system/etc/sysctl.conf
     
 ## Extra Cyanogen vendor files
 PRODUCT_COPY_FILES += \
     vendor/cyanogen/prebuilt/common/etc/apns-conf.xml:system/etc/apns-conf.xml
 
-## SuperSU
-#PRODUCT_COPY_FILES += \
-	#device/semc/shakira/prebuilt/SuperSU.apk:system/app/SuperSU.apk \
-	#device/semc/shakira/prebuilt/su:system/xbin/su
 
-## GingerDX files
-#PRODUCT_COPY_FILES += \
-    #device/semc/shakira/prebuilt/GalleryDX.apk:/system/app/GalleryDX.apk \
-    #device/semc/shakira/prebuilt/GDXUpdateNotify.apk:/system/app/GDXUpdateNotify.apk \
-    #device/semc/shakira/prebuilt/HoloLauncher.apk:/system/app/HoloLauncher.apk \
-    #device/semc/shakira/prebuilt/GPSCountryOptimizer.apk:/system/app/GPSCountryOptimizer.apk \
-    #device/semc/shakira/prebuilt/libqpicjni88.so:/system/lib/libqpicjni88.so
-    
+PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*,device/gingerdx-common/prebuilt/system,system)
 PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*,device/semc/shakira/prebuilt/system,system)
-## Gapps
-#PRODUCT_COPY_FILES += \
-	#device/semc/shakira/prebuilt/gapps/app/carhomegoogle.apk:system/app/carhomegoogle.apk \
-	#device/semc/shakira/prebuilt/gapps/app/fotakill.apk:system/app/fotakill.apk \
-	#device/semc/shakira/prebuilt/gapps/app/geniewidget.apk:system/app/geniewidget.apk \
-	#device/semc/shakira/prebuilt/gapps/app/gmail.apk:system/app/gmail.apk \
-	#device/semc/shakira/prebuilt/gapps/app/googlebackuptransport.apk:system/app/googlebackuptransport.apk \
-	#device/semc/shakira/prebuilt/gapps/app/googlecalendarsyncadapter.apk:system/app/googlecalendarsyncadapter.apk \
-	#device/semc/shakira/prebuilt/gapps/app/googlecontactssyncadapter.apk:system/app/googlecontactssyncadapter.apk \
-	#device/semc/shakira/prebuilt/gapps/app/googlefeedback.apk:system/app/googlefeedback.apk \
-	#device/semc/shakira/prebuilt/gapps/app/googlepartnersetup.apk:system/app/googlepartnersetup.apk \
-	#device/semc/shakira/prebuilt/gapps/app/googlequicksearchbox.apk:system/app/googlequicksearchbox.apk \
-	#device/semc/shakira/prebuilt/gapps/app/googleservicesframework.apk:system/app/googleservicesframework.apk \
-	#device/semc/shakira/prebuilt/gapps/app/latinimetutorial.apk:system/app/latinimetutorial.apk \
-	#device/semc/shakira/prebuilt/gapps/app/maps.apk:system/app/maps.apk \
-	#device/semc/shakira/prebuilt/gapps/app/marketupdater.apk:system/app/marketupdater.apk \
-	#device/semc/shakira/prebuilt/gapps/app/mediauploader.apk:system/app/mediauploader.apk \
-	#device/semc/shakira/prebuilt/gapps/app/networklocation.apk:system/app/networklocation.apk \
-	#device/semc/shakira/prebuilt/gapps/app/onetimeinitializer.apk:system/app/onetimeinitializer.apk \
-	#device/semc/shakira/prebuilt/gapps/app/setupwizard.apk:system/app/setupwizard.apk \
-	#device/semc/shakira/prebuilt/gapps/app/talk.apk:system/app/talk.apk \
-	#device/semc/shakira/prebuilt/gapps/app/vending.apk:system/app/vending.apk \
-	#device/semc/shakira/prebuilt/gapps/app/youtube.apk:system/app/youtube.apk \
-	#device/semc/shakira/prebuilt/gapps/app/voicesearch.apk:system/app/voicesearch.apk \
-	#device/semc/shakira/prebuilt/gapps/etc/permissions/com.google.android.maps.xml:system/etc/permissions/com.google.android.maps.xml \
-	#device/semc/shakira/prebuilt/gapps/etc/permissions/features.xml:system/etc/permissions/features.xml \
-	#device/semc/shakira/prebuilt/gapps/framework/com.google.android.maps.jar:system/framework/com.google.android.maps.jar \
-	#device/semc/shakira/prebuilt/gapps/lib/libtalk_jni.so:system/lib/libtalk_jni.so \
-	#device/semc/shakira/prebuilt/gapps/lib/libvoicesearch.so:system/lib/libvoicesearch.so
